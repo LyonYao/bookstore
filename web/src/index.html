@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en"  >
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <!-- bower:css -->
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="../bower_components/angular-material/angular-material.css" />
+    <!-- endbower -->
+    <link rel="stylesheet" href="./css/bookstore.css" />
+</head>
+
+<body ng-app="app" layout="column" ng-controller="homeCtl">
+   
+    <md-toolbar layout="row">
+         Angular Material 应用
+    </md-toolbar>
+    
+    <div flex layout="row">
+       
+        <md-sidenav md-is-locked-open="true" md-component-id="left"  class="md-whiteframe-z2">
+        <md-icon md-svg-icon="share"></md-icon>
+        </md-sidenav>
+        
+        <md-content  id="content"  ng-view md-scroll-y flex layout-padding>
+          
+        </md-content>
+    </div>
+    <!-- bower:js -->
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../bower_components/angular-route/angular-route.js"></script>
+    <script src="../bower_components/angular-animate/angular-animate.js"></script>
+    <script src="../bower_components/angular-aria/angular-aria.js"></script>
+    <script src="../bower_components/angular-messages/angular-messages.js"></script>
+    <script src="../bower_components/angular-material/angular-material.js"></script>
+    <script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <!-- endbower -->
+    <!-- build:js dist/scripts/bookstore.min.js -->
+    <script src="./scripts/modules.js"></script>
+    <script src="./scripts/routes.js"></script>
+    <script src="./scripts/controllers/homeCtl.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>
